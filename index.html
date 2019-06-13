@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+
+ <meta charset="UTF-8">
+
+ <link type="text/css">
+
+ <title>Dog's Story</title>
+
+ <style>
+
+ div, ul, li { margin:0; padding:0; }
+
+ 
+
+#blogMenu {
+
+	float:right;
+
+	margin:0px 5px 3px 5px;
+
+	padding:0 0 3px 0;
+
+	border-radius: 3px;
+
+	background-color:#5c5c5c;
+
+}
+
+ 
+
+#blogMenu ul li {
+
+	float:left;
+
+	list-style-type:none;
+
+}
+
+ 
+
+#blogMenu a {
+
+	height:15px;
+
+	color:#f1f1f1;
+
+	font-family:arial;
+
+	font-size:12px;
+
+	padding:0 10px 0 10px;
+
+	text-decoration:none;
+
+}
+
+ 
+
+#blogMenu a:hover {
+
+	color:#D4F4FA;
+
+	border-bottom:3px solid #FAED7D;
+
+}
+
+ 
+
+#blogMenu ul ul {
+
+	display:none;
+
+	position:absolute;
+
+	background-color:#5c5c5c;
+
+}
+
+ 
+
+#blogMenu ul li:hover ul {
+
+	display: block;
+
+	height:0px;
+}
+
+ 
+
+#blogMenu ul ul li {
+
+	float:none;
+   
+}
+
+#blogMenu ul li {
+
+}
+
+ 
+
+ body {
+
+ 	margin:0px;
+
+ 	padding: 0px;
+
+ 	background-image: url("./img/배경.jpg");
+
+ }
+
+.wrap { /* 본문 안에 사용된 영역을 묶어서 배경색, 여백 등을 지정 */
+
+	width: 850px; 
+
+	background: white; 
+
+	margin: 0px auto 0px auto;
+
+}
+
+header { /* 헤더 부분의 배경색, 크기, 글자 정렬 등을 지정 */
+
+	background: yellow; 
+
+	width: 850px; 
+
+	height: 80px; 
+
+	text-align: center; 
+
+	padding: 0.1px 0px 0px 0px;
+
+}
+
+#search
+{
+	float: right;
+	margin: 0;
+	
+}
+
+a { 
+
+	text-decoration: none; 
+
+	
+
+}
+
+nav a:hover { /* 마우스를 올렸을 때 글자색을 지정 */
+
+	color: gray; 
+
+	border-color: darkgray;
+
+}
+
+nav { /* 내비게이션 영역의 크기, 배경색, 글자 정렬 등을 지정 */
+
+	width: 850px; 
+
+	height: 70px; 
+
+	background: lightgray; 
+
+	text-align: center; 
+
+	color: black; 
+
+	padding: 0.1px 0px 0px 0px;
+
+}
+
+nav li {
+	display: inline;
+
+	padding: 5px;
+
+}
+
+nav a { /* 내비게이션 영역의 메뉴 글자들의 밑줄을 없애고 글자색 등 지정 */
+
+	text-decoration: none; 
+
+	color: black; 
+
+	padding: 8px; 
+
+	border-style: hidden hidden solid hidden; 
+
+	border-color: transparent; 
+
+	font-weight: bold;
+
+}
+
+section { /* 아티클 영역의 크기, 배경색, 글자 정렬 등을 지정 */
+
+	width: 700px; 
+
+	background: white; 
+
+	float: left; 
+
+}
+
+aside { /* 어사이드 영역의 크기, 배경색, 글자 정렬 등을 지정 */
+
+	width: 150px; 
+
+	background: aqua; 
+
+	margin-left: 200px;
+
+}
+
+footer { /* 각주 영역의 크기, 배경색 글자 정렬 등을 지정 */
+
+	float: bottom; 
+
+	width: 850px; 
+
+	height: 50px;
+
+	padding: 20px 0px 0px 0px; 
+
+	background: black; 
+
+	color: white; 
+
+	clear: both; 
+
+	text-align: center;
+
+}
+
+h1 {
+
+	font-size: 50px;
+
+ text-shadow: 0 0 10px #666;
+
+ color: #fff;
+
+ margin: 0 auto;
+
+ text-align: center;
+
+ text-transform: capitalize;
+
+ font-family: "맑은 고딕";
+
+ font-style: italic;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+ <div class="wrap">
+
+  <header>
+
+   <h1><a href="index.html">Dog's Story</a></h1>
+
+   <div id="search">
+
+	<input type="text"><a href="https://www.google.co.kr/"><button type="button"><img src="./img/검색.png" width="15" height="15"></button></a>
+
+	</div>
+
+  </header>
+
+  <nav>
+
+  	<div id="blogMenu">
+
+<ul>
+
+<li><a href="로그인창.html">로그인</a>
+
+</li>
+
+ 
+
+<li><a href="회원가입창.html">회원가입</a>
+
+ 
+
+</li>
+
+<li><a href="#">상담센터</a>
+
+<ul>
+
+<li><a href="#">sub</a></li>
+
+<li><a href="#">sub</a></li>
+
+<li><a href="#">sub</a></li>
+
+</ul>
+
+</li>
+
+</div>
+
+   <ul>
+
+   	<li><a href="소형견.html">소형견</a>
+
+ 	<li><a href="강아지 소개.html">나의 소개</a></li> 
+
+    <li><a href="하이퍼링크.html">하이퍼링크</a></li>
+
+   </ul>
+
+  </nav>
+
+  <section>
+
+  	<img src="img/단체.jpg" width="850" height="600">
+
+  </section>
+
+  <aside>
+
+   </table>
+
+  </aside>
+
+  <footer> 
+
+   ::: 강아지 이야기 :::
+
+  </footer>
+
+ </div>
+
+</body>
+
+</html>
+
+ 
