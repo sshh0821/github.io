@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="ko">
 
@@ -113,7 +113,7 @@
 
  }
 
-.wrap { /* 본문 안에 사용된 영역을 묶어서 배경색, 여백 등을 지정 */
+.wrap { 
 
 	width: 850px; 
 
@@ -123,7 +123,7 @@
 
 }
 
-header { /* 헤더 부분의 배경색, 크기, 글자 정렬 등을 지정 */
+header { 
 
 	background: yellow; 
 
@@ -152,54 +152,103 @@ a {
 
 }
 
-nav a:hover { /* 마우스를 올렸을 때 글자색을 지정 */
+#topmenu {
 
-	color: gray; 
+	height: 30px;
 
-	border-color: darkgray;
-
+	width: 850px;
 }
 
-nav { /* 내비게이션 영역의 크기, 배경색, 글자 정렬 등을 지정 */
+#topmenu ul {
 
-	width: 850px; 
+	list-style-type: none;
 
-	height: 70px; 
+	margin: 0px;
 
-	background: lightgray; 
-
-	text-align: center; 
-
-	color: black; 
-
-	padding: 0.1px 0px 0px 0px;
-
+	padding: 0px;
 }
 
-nav li {
-	display: inline;
+#topmenu ul li {
 
-	padding: 5px;
+	color: white;
 
+	background-color: #2d2d2d;
+
+	float: left;
+
+	line-height: 30px;
+
+	vertical-align: middle;
+
+	text-align: center;
+
+	position: relative;
 }
 
-nav a { /* 내비게이션 영역의 메뉴 글자들의 밑줄을 없애고 글자색 등 지정 */
+.menulink, .submenulink {
 
-	text-decoration: none; 
+	text-decoration: none;
 
-	color: black; 
+	display: block;
 
-	padding: 8px; 
+	width: 150px;
 
-	border-style: hidden hidden solid hidden; 
-
-	border-color: transparent; 
+	font-size: 12px;
 
 	font-weight: bold;
+}
+
+.menulink {
+
+	color: white;
+}
+
+.topmenuli:hover .menulink {
+
+	color: red;
+
+	background-color: #4d4d4d;
+}
+
+.submenulink {
+
+	color: #2d2d2d;
+
+	background-color: white;
+
+	border: solid 1px black;
+
+	margin-top: -1px;
+}
+
+.longlink {
+
+	width: 190px;
+}
+
+.submenu {
+
+	position: absolute;
+
+	height: 0px;
+
+	overflow: hidden;
 
 }
 
-section { /* 아티클 영역의 크기, 배경색, 글자 정렬 등을 지정 */
+.topmenuli:hover .submenu {
+
+	height: 93px;
+}
+
+.submenulink:hover {
+
+	color: red;
+
+	background-color: #dddddd;
+}
+
+section { 
 
 	width: 700px; 
 
@@ -209,7 +258,7 @@ section { /* 아티클 영역의 크기, 배경색, 글자 정렬 등을 지정 
 
 }
 
-aside { /* 어사이드 영역의 크기, 배경색, 글자 정렬 등을 지정 */
+aside { 
 
 	width: 150px; 
 
@@ -219,7 +268,7 @@ aside { /* 어사이드 영역의 크기, 배경색, 글자 정렬 등을 지정
 
 }
 
-footer { /* 각주 영역의 크기, 배경색 글자 정렬 등을 지정 */
+footer { 
 
 	float: bottom; 
 
@@ -279,51 +328,60 @@ h1 {
 
   </header>
 
-  <nav>
+  <nav id="topmenu">
+  	<ul>
+  		<li class="topmenuli">
 
-  	<div id="blogMenu">
+  			<a class ="menulink" href="index.html">강아지 분류</a>
 
-<ul>
+  		<ul class="submenu">
 
-<li><a href="로그인창.html">로그인</a>
+  			<li><a href="소형견.html" class="submenulink" longlink">소형견</a></li>
 
-</li>
+  			<li><a href="중형견.html" class="submenulink" longlink">중형견</a></li>
 
- 
+  			<li><a href="대형견.html" class="submenulink" longlink">대형견</a></li>
 
-<li><a href="회원가입창.html">회원가입</a>
+  		</ul>
 
- 
+  	</li>
 
-</li>
+  	<li>|</li>
 
-<li><a href="#">상담센터</a>
+  	<li class="topmenuli">
 
-<ul>
+  		<a class="menulink" href="">강아지 소개</a>
 
-<li><a href="#">sub</a></li>
+  	</li>
 
-<li><a href="#">sub</a></li>
+  	<li>|</li>
 
-<li><a href="#">sub</a></li>
+  	<li class="topmenuli">
 
-</ul>
+  		<a class="menulink" href="">로그인</a>
 
-</li>
+  		<ul class="submenu">
 
-</div>
+  			<li><a href="회원가입창.html"class="submenulink">회원가입</a></li>
 
-   <ul>
+  			<li><a href="로그인창.html" class="submenulink">로그인하기</a></li>
 
-   	<li><a href="소형견.html">소형견</a>
+  		</ul>
 
- 	<li><a href="강아지 소개.html">나의 소개</a></li> 
+  	</li>
 
-    <li><a href="하이퍼링크.html">하이퍼링크</a></li>
+  	<li>|</li>
 
-   </ul>
+  	<li class="topmenuli">
 
-  </nav>
+  		<a class="menulink" href="http://www.angel.or.kr/">동물보호센터</a></li>
+
+  	</li>
+
+  </ul>
+
+</nav>
+
 
   <section>
 
@@ -332,8 +390,6 @@ h1 {
   </section>
 
   <aside>
-
-   </table>
 
   </aside>
 
